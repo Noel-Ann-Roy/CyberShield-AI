@@ -42,7 +42,7 @@ The dashboard is built to behave like a real **SIEM (Security Information and Ev
 ## 🖥️ Dashboard Walkthrough
 
 ### Initial Dashboard
-![Initial Dashboard](assets/Img1.png)
+![Initial Dashboard](assets/img1.png)
 *The Security Command Center on startup — all counters at zero, scanner feed idling, threat badge showing SECURE.*
 
 ---
@@ -51,17 +51,17 @@ The dashboard is built to behave like a real **SIEM (Security Information and Ev
 
 **Test 1 — Weak Password (`12345`)**
 
-![Weak Password Input](assets/Img2.png)
+![Weak Password Input](assets/img2.png)
 *Password entered. Entropy calculated, score computed, category determined.*
 
-![Weak Password Summary](assets/Img3.png)
+![Weak Password Summary](assets/img3.png)
 *Full assessment report: entropy in bits, 5-dimension complexity breakdown, targeted improvement recommendations, and export block.*
 
 ---
 
 **Test 2 — Strong Password (`MySecure!Pass2025`)**
 
-![Strong Password](assets/Img4.png)
+![Strong Password](assets/img4.png)
 *High entropy, all five complexity criteria satisfied, category: STRONG.*
 
 ---
@@ -70,21 +70,21 @@ The dashboard is built to behave like a real **SIEM (Security Information and Ev
 
 **Test 1 — Typosquatted Domain (`https://g00gle.com`)**
 
-![Suspicious URL](assets/Img5.png)
+![Suspicious URL](assets/img5.png)
 *Brand-impersonation detection fires — digit substitution (`00` for `oo`) caught by the leet-speak normalization layer.*
 
 ---
 
 **Test 2 — Legitimate Domain (`https://www.google.com`)**
 
-![Legitimate URL](assets/Img6.png)
+![Legitimate URL](assets/img6.png)
 *Verified brand domain — allowlist suppression keeps the false-positive rate clean. Verdict: SAFE.*
 
 ---
 
 **Test 3 — Legitimate with Query String (`https://www.google.com/search?q=cybersecurity`)**
 
-![Legitimate URL with Parameters](assets/Img7.png)
+![Legitimate URL with Parameters](assets/img8.png)
 *Path and query-string keyword scanning correctly ignores a verified apex domain. Verdict: SAFE.*
 
 ---
@@ -93,11 +93,11 @@ The dashboard is built to behave like a real **SIEM (Security Information and Ev
 
 **Test 1, 2, 3 — Phishing Samples**
 
-![Phishing Test 1](assets/Img8.png)
+![Phishing Test 1](assets/img9.png)
 
-![Phishing Test 2](assets/Img9.png)
+![Phishing Test 2](assets/img10.png)
 
-![Phishing Test 3](assets/Img10.png)
+![Phishing Test 3](assets/img11.png)
 
 *The 4-layer pipeline in action — heuristic triggers listed with color-coded severity (`🔴` critical / `🟡` soft signal), ML classifier confidence displayed with advisory caption.*
 
@@ -105,7 +105,7 @@ The dashboard is built to behave like a real **SIEM (Security Information and Ev
 
 ### 📊 Final Dashboard State
 
-![Final Dashboard](assets/Img11.png)
+![Final Dashboard](assets/img12.png)
 *After multiple scans — live KPI metrics updated, telemetry bar chart populated, session event log recording every timestamped scan, threat badge escalated.*
 
 ---
