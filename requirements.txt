@@ -1,4 +1,4 @@
-python
+
 streamlit
 plotly
 scikit-learn
